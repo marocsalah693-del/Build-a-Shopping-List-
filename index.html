@@ -4,31 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping List</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.development.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.development.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
-    <script
-      data-plugins="transform-modules-umd"
-      type="text/babel"
-      data-presets="react"
-      data-type="module"
-      src="./src/App.jsx"
-    ></script>
-    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-    <main id="app-container"></main>
-    <script
-      data-plugins="transform-modules-umd"
-      type="text/babel"
-      data-presets="react"
-      data-type="module"
-    >
-      import { ShoppingList } from "./src/App.jsx";
-      const appContainer = document.getElementById("app-container");
-      const root = ReactDOM.createRoot(appContainer);
-      root.render(<ShoppingList />);
+    <!-- Le conteneur où React va s'injecter -->
+    <div id="app-container"></div>
 
-    </script>
+    <!-- Le point d'entrée unique géré par Vite -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

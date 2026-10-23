@@ -1,4 +1,4 @@
-const { useState, useMemo, useCallback } = React;
+import { useState, useMemo, useCallback } from 'react';
 
 const items = [
   "Apples",
